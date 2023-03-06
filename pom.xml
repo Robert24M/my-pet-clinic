@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>me.learnspring</groupId>
 	<artifactId>my-pet-clinic</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>my-pet-clinic</name>
 	<description>my-pet-clinic</description>
 	<properties>
@@ -75,6 +75,10 @@
 				<version>2.5.3</version>
 				<configuration>
 					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<checkModificationExcludes>
+						<checkModificationExclude>pom.xml</checkModificationExclude>
+					</checkModificationExcludes>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -82,7 +86,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/Robert24M/my-pet-clinic.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>my-pet-clinic-0.0.2</tag>
   </scm>
 
 </project>
