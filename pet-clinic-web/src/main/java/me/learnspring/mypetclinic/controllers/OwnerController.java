@@ -21,4 +21,9 @@ public class OwnerController {
         model.addAttribute("owners", ownerService.findAll());   //.stream().sorted(Comparator.comparing(Owner::getId))
         return "owners/index";
     }
+
+    @RequestMapping("/find")
+    public String findOwners() {
+        return "notimplemented";
+    }
 }
